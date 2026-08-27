@@ -1,0 +1,107 @@
+---
+layout: default
+title: 简历
+permalink: /resume/
+---
+
+<section class="home-resume">
+  <div class="wrapper">
+
+    <div class="resume-head">
+      <h1 class="resume-name">{{ site.author }}</h1>
+      <h2 class="resume-title">软件工程师</h2>
+      <p class="resume-contact">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/yorksity" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+
+    <div class="resume-block">
+      <h3 class="resume-block-title">About</h3>
+      <p class="resume-summary">
+        一名专注于后端与分布式系统的软件工程师，拥有 5 年以上的研发经验。热爱开源、追求简洁优雅的代码，
+        关注云原生、可观测性与工程效能。善于跨团队协作，习惯以数据驱动的方式思考和解决问题。
+      </p>
+    </div>
+
+    <div class="resume-block">
+      <h3 class="resume-block-title">Skills</h3>
+      <ul class="skill-list">
+        <li class="skill-tag">Go</li>
+        <li class="skill-tag">Python</li>
+        <li class="skill-tag">TypeScript</li>
+        <li class="skill-tag">Kubernetes</li>
+        <li class="skill-tag">Docker</li>
+        <li class="skill-tag">PostgreSQL</li>
+        <li class="skill-tag">Redis</li>
+        <li class="skill-tag">gRPC</li>
+        <li class="skill-tag">微服务</li>
+        <li class="skill-tag">CI/CD</li>
+      </ul>
+    </div>
+
+    <div class="resume-block">
+      <h3 class="resume-block-title">Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">高级后端工程师</span>
+            <span class="timeline-time">2022 — 至今</span>
+          </div>
+          <div class="timeline-company">示例科技 · 基础设施部</div>
+          <ul class="timeline-desc">
+            <li>负责核心微服务网关与鉴权体系的架构设计与实现，日处理请求量过亿。</li>
+            <li>主导容器平台向 Kubernetes 的迁移，降低 40% 的部署与运维成本。</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">后端工程师</span>
+            <span class="timeline-time">2019 — 2022</span>
+          </div>
+          <div class="timeline-company">示例网络 · 数据平台</div>
+          <ul class="timeline-desc">
+            <li>设计并实现实时数据管道，支撑多业务线的近实时分析与报表。</li>
+            <li>建设统一的可观测性平台，大幅缩短线上问题的定位时间。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3 class="resume-block-title">Education</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">计算机科学与技术 · 硕士</span>
+            <span class="timeline-time">2016 — 2019</span>
+          </div>
+          <div class="timeline-company">示例大学</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">软件工程 · 学士</span>
+            <span class="timeline-time">2012 — 2016</span>
+          </div>
+          <div class="timeline-company">示例大学</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3 class="resume-block-title">Projects</h3>
+      <div class="project-list">
+        <a class="project-card" href="https://github.com/yorksity" target="_blank" rel="noopener">
+          <h4 class="project-name">分布式任务调度引擎</h4>
+          <p class="project-desc">基于 Go 实现的轻量级任务调度系统，支持定时、依赖编排与失败重试，已在生产环境稳定运行。</p>
+        </a>
+        <a class="project-card" href="https://github.com/yorksity" target="_blank" rel="noopener">
+          <h4 class="project-name">实时日志分析平台</h4>
+          <p class="project-desc">流式处理大规模日志数据，提供实时检索、告警与可视化能力，峰值吞吐量达数十万条/秒。</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
