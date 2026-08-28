@@ -8,16 +8,18 @@ permalink: /resume/
   <div class="wrapper">
 
     <div class="resume-head">
+      <div class="resume-head-info">
+        <h1 class="resume-name">{{ site.author }}</h1>
+        <h2 class="resume-title">软件工程师</h2>
+        <p class="resume-contact">
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <span class="dot">·</span>
+          <a href="https://github.com/yorksity" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
       <div class="resume-photo">
         <img src="{{ '/assets/images/profile-photo.svg' | relative_url }}" alt="个人照片">
       </div>
-      <h1 class="resume-name">{{ site.author }}</h1>
-      <h2 class="resume-title">软件工程师</h2>
-      <p class="resume-contact">
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        <span class="dot">·</span>
-        <a href="https://github.com/yorksity" target="_blank" rel="noopener">GitHub</a>
-      </p>
     </div>
 
     <div class="resume-block">
