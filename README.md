@@ -43,9 +43,22 @@ bundle exec jekyll serve
 layout: post
 title: "文章标题"
 date: 2026-08-24 00:00:00 +0800
+category: llm-inference
 tags: [标签1, 标签2]
 ---
 ```
+
+## 分类
+
+文章通过 `category` 字段归类，取值为 `_data/categories.yml` 中定义好的 slug：
+
+| 分类 | slug |
+| --- | --- |
+| 大模型推理 | `llm-inference` |
+| 英语起源 | `english-origins` |
+| PythonCode | `python` |
+
+新增分类时，在 `_data/categories.yml` 中添加 `name`、`slug`（用于 URL）与 `description`，并在 `categories/` 目录下新建同名 slug 的页面即可。
 
 ## 部署
 

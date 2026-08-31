@@ -1,0 +1,8 @@
+{% if site.data.categories %}
+<nav class="category-filters">
+  <a class="cat-filter{% if include.active == 'all' %} active{% endif %}" href="{{ '/' | relative_url }}">全部</a>
+  {% for cat in site.data.categories %}
+  <a class="cat-filter{% if include.active == cat.slug %} active{% endif %}" href="{{ cat.slug | prepend: '/categories/' | append: '/' | relative_url }}">{{ cat.name }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign cat = site.data.categories | where: "slug", page.category | first %}
+{% assign posts = site.posts | where: "category", page.category %}
+<div class="wrapper">
+  {% include category-nav.html active=page.category %}
+  <header class="category-header">
+    <h1 class="category-name">{{ cat.name }}</h1>
+    {% if cat.description %}<p class="category-desc">{{ cat.description }}</p>{% endif %}
+  </header>
+  {% if posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in posts %}
+    {% include post-card.html %}
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">该分类下暂无文章</p>
+  {% endif %}
+</div>

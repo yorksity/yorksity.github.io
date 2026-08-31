@@ -2,6 +2,7 @@
 layout: post
 title: "Transformer模型架构分析"
 date: 2026-08-28 00:00:00 +0800
+category: llm-inference
 tags: [深度学习, Transformer, 架构]
 ---
 

@@ -1,0 +1,24 @@
+---
+layout: default
+title: 分类
+---
+
+<div class="wrapper">
+  <h1 class="page-title">分类</h1>
+  {% if site.data.categories %}
+  <ul class="category-list">
+    {% for cat in site.data.categories %}
+    {% assign count = site.posts | where: "category", cat.slug | size %}
+    <li class="category-card">
+      <a class="category-card-link" href="{{ cat.slug | prepend: '/categories/' | append: '/' | relative_url }}">
+        <span class="category-card-name">{{ cat.name }}</span>
+        <span class="category-card-count">{{ count }} 篇</span>
+      </a>
+      {% if cat.description %}<p class="category-card-desc">{{ cat.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">暂无分类</p>
+  {% endif %}
+</div>

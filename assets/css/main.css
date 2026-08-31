@@ -592,6 +592,127 @@ a {
   font-size: 0.95rem;
 }
 
+/* ── Categories ──────────────────────────── */
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.cat-filter {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 16px;
+  letter-spacing: 0.02em;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cat-filter:hover {
+  color: var(--blue);
+  border-color: rgba(57, 72, 210, 0.4);
+}
+
+.cat-filter.active {
+  color: #ffffff;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.cat-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--blue);
+  border-radius: 6px;
+  padding: 2px 10px;
+  letter-spacing: 0.03em;
+  transition: background 0.15s;
+}
+
+.cat-badge:hover {
+  background: var(--blue-dark);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--blue);
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.category-card:hover {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  border-color: #c8cae0;
+}
+
+.category-card-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.category-card-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s;
+}
+
+.category-card:hover .category-card-name {
+  color: var(--blue);
+}
+
+.category-card-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.category-card-desc {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.category-header {
+  margin-bottom: 32px;
+}
+
+.category-name {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.category-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
 /* ── Post Page ───────────────────────────── */
 
 .main {

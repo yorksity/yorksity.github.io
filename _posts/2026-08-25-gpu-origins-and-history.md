@@ -2,6 +2,7 @@
 layout: post
 title: "GPU的起源与历史演进"
 date: 2026-08-25 00:00:00 +0800
+category: llm-inference
 tags: [GPU, 计算机历史, 硬件]
 ---
 

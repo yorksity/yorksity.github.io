@@ -1,0 +1,11 @@
+- name: 大模型推理
+  slug: llm-inference
+  description: 大语言模型推理引擎、部署与性能优化
+
+- name: 英语起源
+  slug: english-origins
+  description: 英语词汇、语法的来源与历史演变
+
+- name: PythonCode
+  slug: python
+  description: Python 编程实践、技巧与源码分析

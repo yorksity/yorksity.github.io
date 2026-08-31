@@ -2,6 +2,7 @@
 layout: post
 title: "vLLM 入门：高性能 LLM 推理引擎"
 date: 2026-08-28 00:00:00 +0800
+category: llm-inference
 tags: [vLLM, 大模型, 推理引擎]
 ---
 
