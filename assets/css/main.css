@@ -294,6 +294,26 @@ a {
   color: var(--text-muted);
 }
 
+.resume-links {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.resume-links a {
+  color: var(--text-secondary);
+  transition: color 0.15s;
+}
+
+.resume-links a:hover {
+  color: var(--blue);
+}
+
+.resume-links .dot {
+  margin: 0 10px;
+  color: var(--text-muted);
+}
+
 .resume-block {
   margin-bottom: 44px;
 }
@@ -332,6 +352,61 @@ a {
   border-radius: 20px;
   padding: 4px 16px;
   letter-spacing: 0.02em;
+}
+
+.skill-group {
+  margin-bottom: 20px;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.pub-list {
+  list-style: none;
+  counter-reset: pub;
+}
+
+.pub-item {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 20px;
+}
+
+.pub-item:last-child {
+  margin-bottom: 0;
+}
+
+.pub-item::before {
+  counter-increment: pub;
+  content: "[" counter(pub) "]";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.pub-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 2px;
 }
 
 .timeline-item {
